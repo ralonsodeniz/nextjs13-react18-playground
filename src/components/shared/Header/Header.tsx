@@ -12,14 +12,13 @@ const Header = () => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <ComposedLink href={ROUTES.HOME}>home</ComposedLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <ComposedLink href={ROUTES.USE_CACHE}>
-            use hook and cache
-          </ComposedLink>
-        </NavigationMenuItem>
+        {Object.values(ROUTES).map((route) =>
+          route.render ? (
+            <NavigationMenuItem key={route.href}>
+              <ComposedLink href={route.href}>{route.description}</ComposedLink>
+            </NavigationMenuItem>
+          ) : null,
+        )}
       </NavigationMenuList>
     </NavigationMenu>
   );

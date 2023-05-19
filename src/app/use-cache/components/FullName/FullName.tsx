@@ -4,7 +4,7 @@ import { fetchUser } from '@/http/user';
 import { Button } from '@/components/ui/button';
 import { getRandomInt } from '@/utils/number';
 import * as users from '@/app/use-cache/api/mocks';
-import type { TUserIds } from '@/types/user';
+import type { TUserIds } from '@/app/use-cache/types/user';
 import { useData } from '@/app/use-cache/useData';
 
 const FullName = () => {

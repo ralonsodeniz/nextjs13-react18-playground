@@ -1,6 +1,6 @@
 import { use } from 'react';
 import { fetchUser } from '@/http/user';
-import { TUserIds } from '@/types/user';
+import { TUserIds } from '@/app/use-cache/types/user';
 
 export const useData = () => {
   let data;

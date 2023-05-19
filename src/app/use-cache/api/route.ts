@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import * as users from './mocks';
-import type { TUserIds } from '@/types/user';
+import type { TUserIds } from '@/app/use-cache/types/user';
 
 export const GET = async (request: NextRequest) => {
   const { searchParams } = new URL(request.nextUrl);

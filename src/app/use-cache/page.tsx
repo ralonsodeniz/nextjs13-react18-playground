@@ -5,8 +5,8 @@ export const metadata = {
   description: 'client side use hook and cache example',
 };
 
-const UseCache = () => {
+const UseCachePage = () => {
   return <FullName />;
 };
 
-export default UseCache;
+export default UseCachePage;
