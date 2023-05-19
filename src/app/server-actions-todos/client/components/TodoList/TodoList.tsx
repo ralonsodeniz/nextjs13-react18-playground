@@ -22,7 +22,7 @@ const TodoList = ({
     addOptimisticTodo(todo);
     const data = new FormData();
     data.append('todo', todo);
-    await addTodo(data, true);
+    await addTodo(data);
   };
 
   return (
